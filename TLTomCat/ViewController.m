@@ -7,14 +7,27 @@
 //
 
 #import "ViewController.h"
+#import <AVFoundation/AVFoundation.h>
+//#import <AudioToolbox/AudioServices.h>
 
-@interface ViewController ()
+@interface ViewController ()/*<AVAudioRecorderDelegate, AVAudioPlayerDelegate>*/
 - (IBAction)btnCymbal;
 - (IBAction)btnDrink;
 - (IBAction)btnEat;
 - (IBAction)btnKnockout;
+- (IBAction)btnFart;
+- (IBAction)btnScratch;
+- (IBAction)btnPie;
+
+- (IBAction)btnFootLeft;
+- (IBAction)btnFootRight;
+- (IBAction)btnStomach;
+- (IBAction)btnAngryTail;
+
+@property (nonatomic, strong) AVAudioPlayer *player;
 
 @property (weak, nonatomic) IBOutlet UIImageView *tomCatView;
+
 @end
 
 @implementation ViewController
@@ -29,7 +42,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void) playAnimationwithName:(NSString *)imageFileName imageCount:(int)imageCount {
+-(void) playAnimationwithName:(NSString *)imageFileName andImageCount:(int)imageCount {
     if (self.tomCatView.isAnimating) {
         return;
     }
@@ -60,19 +73,65 @@
 //    [self.tomCatView performSelector:@selector(setAnimationImages:) withObject:nil afterDelay:time];
 }
 
+// 播放音乐文件
+-(void)playSoundWithFile:(NSString*)filename
+{
+    NSString *outputSound = [[NSBundle mainBundle] pathForResource:filename ofType:@"wav"];
+    NSURL *outUrlB = [NSURL fileURLWithPath:outputSound];
+    
+    NSError *error = nil;
+    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:outUrlB error:&error];
+    if (error)
+        NSLog(@"AVAudioPlayer error %@, %@", error, [error userInfo]);
+    
+    [self.player play];
+}
+
 - (IBAction)btnCymbal {
-    [self playAnimationwithName:@"cymbal" imageCount:13];
+    [self playAnimationwithName:@"cymbal" andImageCount:13];
 }
 
 - (IBAction)btnDrink {
-    [self playAnimationwithName:@"drink" imageCount:81];
+    [self playAnimationwithName:@"drink" andImageCount:81];
+    
+    [self performSelector:@selector(playSoundWithFile:) withObject:@"pour_milk" afterDelay:2.4];
+    [self performSelector:@selector(playSoundWithFile:) withObject:@"p_drink_milk" afterDelay:5.8];
 }
 
 - (IBAction)btnEat {
-    [self playAnimationwithName:@"eat" imageCount:40];
+    [self playAnimationwithName:@"eat" andImageCount:40];
 }
 
 - (IBAction)btnKnockout {
-    [self playAnimationwithName:@"knockout" imageCount:81];
+    [self playAnimationwithName:@"knockout" andImageCount:81];
 }
+
+- (IBAction)btnFart {
+    [self playAnimationwithName:@"fart" andImageCount:28];
+}
+
+- (IBAction)btnScratch {
+    [self playAnimationwithName:@"scratch" andImageCount:56];
+}
+
+- (IBAction)btnPie {
+    [self playAnimationwithName:@"pie" andImageCount:24];
+}
+
+- (IBAction)btnFootLeft {
+    [self playAnimationwithName:@"footLeft" andImageCount:30];
+}
+
+- (IBAction)btnFootRight {
+    [self playAnimationwithName:@"footRight" andImageCount:30];
+}
+
+- (IBAction)btnStomach {
+    [self playAnimationwithName:@"stomach" andImageCount:34];
+}
+
+- (IBAction)btnAngryTail {
+    [self playAnimationwithName:@"angry" andImageCount:26];
+}
+
 @end

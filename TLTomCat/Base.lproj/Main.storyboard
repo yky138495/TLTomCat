@@ -18,7 +18,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="thj-XI-R2S">
                                 <rect key="frame" x="20" y="362" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="cymbal"/>
                                 <connections>
                                     <action selector="btnCymbal" destination="BYZ-38-t0r" eventType="touchUpInside" id="qCq-LI-GOX"/>
@@ -26,26 +26,35 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cP5-Qn-Xh9">
                                 <rect key="frame" x="20" y="493" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="eat"/>
                                 <connections>
                                     <action selector="btnEat" destination="BYZ-38-t0r" eventType="touchUpInside" id="ih2-iz-Cx1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ebv-Yp-JXL">
-                                <rect key="frame" x="254" y="377" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ebv-Yp-JXL">
+                                <rect key="frame" x="247" y="362" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="fart"/>
+                                <connections>
+                                    <action selector="btnFart" destination="BYZ-38-t0r" eventType="touchUpInside" id="CDs-fL-e3K"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BsV-pa-J7u">
-                                <rect key="frame" x="254" y="443" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BsV-pa-J7u">
+                                <rect key="frame" x="247" y="428" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="scratch"/>
+                                <connections>
+                                    <action selector="btnScratch" destination="BYZ-38-t0r" eventType="touchUpInside" id="AoM-hK-dNh"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EVQ-IH-yWF">
-                                <rect key="frame" x="254" y="508" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EVQ-IH-yWF">
+                                <rect key="frame" x="247" y="493" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="pie"/>
+                                <connections>
+                                    <action selector="btnPie" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z3r-aC-gSJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Wid-nw-aAJ">
                                 <rect key="frame" x="65" y="116" width="187" height="165"/>
@@ -56,10 +65,38 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lft-ts-Xd7">
                                 <rect key="frame" x="20" y="428" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="drink"/>
                                 <connections>
                                     <action selector="btnDrink" destination="BYZ-38-t0r" eventType="touchUpInside" id="oMy-78-ZGm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bSH-7o-zUf">
+                                <rect key="frame" x="166" y="515" width="36" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="btnFootLeft" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJM-gq-JMY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mhZ-km-Elv">
+                                <rect key="frame" x="113" y="516" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="btnFootRight" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qdl-v3-9AI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ufa-1D-ccf">
+                                <rect key="frame" x="113" y="410" width="89" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnStomach" destination="BYZ-38-t0r" eventType="touchUpInside" id="f4e-75-vbN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="icl-li-lKm">
+                                <rect key="frame" x="215" y="443" width="37" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnAngryTail" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zo3-bw-4P0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -79,5 +116,8 @@
         <image name="cymbal" width="60" height="60"/>
         <image name="drink" width="60" height="60"/>
         <image name="eat" width="60" height="60"/>
+        <image name="fart" width="60" height="60"/>
+        <image name="pie" width="60" height="60"/>
+        <image name="scratch" width="60" height="60"/>
     </resources>
 </document>

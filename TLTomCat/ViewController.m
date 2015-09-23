@@ -7,14 +7,27 @@
 //
 
 #import "ViewController.h"
+#import <AVFoundation/AVFoundation.h>
+//#import <AudioToolbox/AudioServices.h>
 
 @interface ViewController ()
 - (IBAction)btnCymbal;
 - (IBAction)btnDrink;
 - (IBAction)btnEat;
 - (IBAction)btnKnockout;
+- (IBAction)btnFart;
+- (IBAction)btnScratch;
+- (IBAction)btnPie;
+
+- (IBAction)btnFootLeft;
+- (IBAction)btnFootRight;
+- (IBAction)btnStomach;
+- (IBAction)btnAngryTail;
+
+@property (nonatomic, strong) AVAudioPlayer *player;
 
 @property (weak, nonatomic) IBOutlet UIImageView *tomCatView;
+
 @end
 
 @implementation ViewController
@@ -29,7 +42,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void) playAnimationwithName:(NSString *)imageFileName imageCount:(int)imageCount {
+-(void) playAnimationwithName:(NSString *)imageFileName andImageCount:(int)imageCount {
     if (self.tomCatView.isAnimating) {
         return;
     }
@@ -60,19 +73,84 @@
 //    [self.tomCatView performSelector:@selector(setAnimationImages:) withObject:nil afterDelay:time];
 }
 
+// 播放音乐文件
+-(void)playSoundWithFile:(NSString*)filename
+{
+    NSString *outputSound = [[NSBundle mainBundle] pathForResource:filename ofType:@"wav"];
+    NSURL *outUrlB = [NSURL fileURLWithPath:outputSound];
+    
+    NSError *error = nil;
+    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:outUrlB error:&error];
+    if (error)
+        NSLog(@"AVAudioPlayer error %@, %@", error, [error userInfo]);
+    
+    [self.player play];
+}
+
+
+-(int)getRandomNumber:(int)from to:(int)to {
+    return (int)(from + arc4random() % (to-from+1));
+}
+
 - (IBAction)btnCymbal {
-    [self playAnimationwithName:@"cymbal" imageCount:13];
+    [self playAnimationwithName:@"cymbal" andImageCount:13];
+    [self performSelector:@selector(playSoundWithFile:) withObject:@"cymbal" afterDelay:0.8];
 }
 
 - (IBAction)btnDrink {
-    [self playAnimationwithName:@"drink" imageCount:81];
+    [self playAnimationwithName:@"drink" andImageCount:81];
+    
+    [self performSelector:@selector(playSoundWithFile:) withObject:@"pour_milk" afterDelay:2.4];
+    [self performSelector:@selector(playSoundWithFile:) withObject:@"p_drink_milk" afterDelay:5.8];
 }
 
 - (IBAction)btnEat {
-    [self playAnimationwithName:@"eat" imageCount:40];
+    [self playAnimationwithName:@"eat" andImageCount:40];
+    [self performSelector:@selector(playSoundWithFile:) withObject:@"p_eat" afterDelay:1.8];
 }
 
 - (IBAction)btnKnockout {
-    [self playAnimationwithName:@"knockout" imageCount:81];
+    [self playAnimationwithName:@"knockout" andImageCount:81];
 }
+
+- (IBAction)btnFart {
+    [self playAnimationwithName:@"fart" andImageCount:28];
+}
+
+- (IBAction)btnScratch {
+    [self playAnimationwithName:@"scratch" andImageCount:56];
+    [self performSelector:@selector(playSoundWithFile:) withObject:@"scratch_kratzen" afterDelay:3.8];
+}
+
+- (IBAction)btnPie {
+    [self playAnimationwithName:@"pie" andImageCount:24];
+}
+
+- (IBAction)btnFootLeft {
+    int number = [self getRandomNumber:1 to:2];
+    [self playAnimationwithName:@"footLeft" andImageCount:30];
+    [self playSoundWithFile:number == 1 ? @"p_foot3" : @"p_foot4"];
+}
+
+- (IBAction)btnFootRight {
+    int number = [self getRandomNumber:1 to:2];
+    [self playAnimationwithName:@"footRight" andImageCount:30];
+    [self playSoundWithFile:number == 1 ? @"p_foot3" : @"p_foot4"];
+}
+
+- (IBAction)btnStomach {
+    int number = [self getRandomNumber:1 to:2];
+    [self playAnimationwithName:@"stomach" andImageCount:34];
+    [self playSoundWithFile:number == 1 ? @"p_belly1" : @"p_belly2"];
+}
+
+- (IBAction)btnAngryTail {
+    NSString *file = [NSString stringWithFormat:@"slap%d",[self getRandomNumber:1 to:6]];
+    
+    [self playAnimationwithName:@"angry" andImageCount:26];
+    [self playSoundWithFile:file];
+    [self performSelector:@selector(playSoundWithFile:) withObject:@"fall" afterDelay:1.8];
+    [self performSelector:@selector(playSoundWithFile:) withObject:@"p_stars2s" afterDelay:2.3];
+}
+
 @end

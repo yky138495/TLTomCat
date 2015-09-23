@@ -10,7 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 //#import <AudioToolbox/AudioServices.h>
 
-@interface ViewController ()/*<AVAudioRecorderDelegate, AVAudioPlayerDelegate>*/
+@interface ViewController ()
 - (IBAction)btnCymbal;
 - (IBAction)btnDrink;
 - (IBAction)btnEat;
@@ -86,6 +86,7 @@
     
     [self.player play];
 }
+
 
 -(int)getRandomNumber:(int)from to:(int)to {
     return (int)(from + arc4random() % (to-from+1));

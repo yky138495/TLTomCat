@@ -42,7 +42,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void) playAnimationwithName:(NSString *)imageFileName andImageCount:(int)imageCount {
+-(void) playAnimationwithName:(NSString *)imageFileName andImageCount:(int)imageCount andDuration:(float)duration {
     if (self.tomCatView.isAnimating) {
         return;
     }
@@ -58,7 +58,7 @@
     //1、把要播放的图片加载到UIImageView中
     self.tomCatView.animationImages = arr;
     //2、设置播放的时间
-    self.tomCatView.animationDuration = arr.count*0.1;
+    self.tomCatView.animationDuration = arr.count*duration;
     //3、设置播放的次数
     self.tomCatView.animationRepeatCount = 1;
     //4、开始播放
@@ -93,61 +93,61 @@
 }
 
 - (IBAction)btnCymbal {
-    [self playAnimationwithName:@"cymbal" andImageCount:13];
+    [self playAnimationwithName:@"cymbal" andImageCount:13 andDuration:0.1];
     [self performSelector:@selector(playSoundWithFile:) withObject:@"cymbal" afterDelay:0.8];
 }
 
 - (IBAction)btnDrink {
-    [self playAnimationwithName:@"drink" andImageCount:81];
+    [self playAnimationwithName:@"drink" andImageCount:81 andDuration:0.05];
     
     [self performSelector:@selector(playSoundWithFile:) withObject:@"pour_milk" afterDelay:2.4];
     [self performSelector:@selector(playSoundWithFile:) withObject:@"p_drink_milk" afterDelay:5.8];
 }
 
 - (IBAction)btnEat {
-    [self playAnimationwithName:@"eat" andImageCount:40];
+    [self playAnimationwithName:@"eat" andImageCount:40 andDuration:0.05];
     [self performSelector:@selector(playSoundWithFile:) withObject:@"p_eat" afterDelay:1.8];
 }
 
 - (IBAction)btnKnockout {
-    [self playAnimationwithName:@"knockout" andImageCount:81];
+    [self playAnimationwithName:@"knockout" andImageCount:81 andDuration:0.05];
 }
 
 - (IBAction)btnFart {
-    [self playAnimationwithName:@"fart" andImageCount:28];
+    [self playAnimationwithName:@"fart" andImageCount:28 andDuration:0.08];
 }
 
 - (IBAction)btnScratch {
-    [self playAnimationwithName:@"scratch" andImageCount:56];
+    [self playAnimationwithName:@"scratch" andImageCount:56 andDuration:0.06];
     [self performSelector:@selector(playSoundWithFile:) withObject:@"scratch_kratzen" afterDelay:3.8];
 }
 
 - (IBAction)btnPie {
-    [self playAnimationwithName:@"pie" andImageCount:24];
+    [self playAnimationwithName:@"pie" andImageCount:24 andDuration:0.1];
 }
 
 - (IBAction)btnFootLeft {
     int number = [self getRandomNumber:1 to:2];
-    [self playAnimationwithName:@"footLeft" andImageCount:30];
+    [self playAnimationwithName:@"footLeft" andImageCount:30 andDuration:0.1];
     [self playSoundWithFile:number == 1 ? @"p_foot3" : @"p_foot4"];
 }
 
 - (IBAction)btnFootRight {
     int number = [self getRandomNumber:1 to:2];
-    [self playAnimationwithName:@"footRight" andImageCount:30];
+    [self playAnimationwithName:@"footRight" andImageCount:30 andDuration:0.1];
     [self playSoundWithFile:number == 1 ? @"p_foot3" : @"p_foot4"];
 }
 
 - (IBAction)btnStomach {
     int number = [self getRandomNumber:1 to:2];
-    [self playAnimationwithName:@"stomach" andImageCount:34];
+    [self playAnimationwithName:@"stomach" andImageCount:34 andDuration:0.1];
     [self playSoundWithFile:number == 1 ? @"p_belly1" : @"p_belly2"];
 }
 
 - (IBAction)btnAngryTail {
     NSString *file = [NSString stringWithFormat:@"slap%d",[self getRandomNumber:1 to:6]];
     
-    [self playAnimationwithName:@"angry" andImageCount:26];
+    [self playAnimationwithName:@"angry" andImageCount:26 andDuration:0.1];
     [self playSoundWithFile:file];
     [self performSelector:@selector(playSoundWithFile:) withObject:@"fall" afterDelay:1.8];
     [self performSelector:@selector(playSoundWithFile:) withObject:@"p_stars2s" afterDelay:2.3];

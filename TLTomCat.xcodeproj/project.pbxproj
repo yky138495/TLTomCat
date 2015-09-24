@@ -36,6 +36,16 @@
 		7EDB1C221BB1A64100DA3F78 /* slap6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB1C051BB1A64100DA3F78 /* slap6.wav */; settings = {ASSET_TAGS = (); }; };
 		7EDB1C231BB1A64100DA3F78 /* splat_01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB1C061BB1A64100DA3F78 /* splat_01.wav */; settings = {ASSET_TAGS = (); }; };
 		7EDB1C241BB1A64100DA3F78 /* splat_05.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB1C071BB1A64100DA3F78 /* splat_05.wav */; settings = {ASSET_TAGS = (); }; };
+		7EDB20661BB3D4FE00DA3F78 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB205C1BB3D4FE00DA3F78 /* Icon.png */; settings = {ASSET_TAGS = (); }; };
+		7EDB20671BB3D4FE00DA3F78 /* iconTom-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB205D1BB3D4FE00DA3F78 /* iconTom-120.png */; settings = {ASSET_TAGS = (); }; };
+		7EDB20681BB3D4FE00DA3F78 /* iconTom-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB205E1BB3D4FE00DA3F78 /* iconTom-152.png */; settings = {ASSET_TAGS = (); }; };
+		7EDB20691BB3D4FE00DA3F78 /* iconTom-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB205F1BB3D4FE00DA3F78 /* iconTom-180.png */; settings = {ASSET_TAGS = (); }; };
+		7EDB206A1BB3D4FE00DA3F78 /* iconTom-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB20601BB3D4FE00DA3F78 /* iconTom-29.png */; settings = {ASSET_TAGS = (); }; };
+		7EDB206B1BB3D4FE00DA3F78 /* iconTom-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB20611BB3D4FE00DA3F78 /* iconTom-40.png */; settings = {ASSET_TAGS = (); }; };
+		7EDB206C1BB3D4FE00DA3F78 /* iconTom-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB20621BB3D4FE00DA3F78 /* iconTom-58.png */; settings = {ASSET_TAGS = (); }; };
+		7EDB206D1BB3D4FE00DA3F78 /* iconTom-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB20631BB3D4FE00DA3F78 /* iconTom-76.png */; settings = {ASSET_TAGS = (); }; };
+		7EDB206E1BB3D4FE00DA3F78 /* IconTom-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB20641BB3D4FE00DA3F78 /* IconTom-80.png */; settings = {ASSET_TAGS = (); }; };
+		7EDB206F1BB3D4FE00DA3F78 /* IconTom-87.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB20651BB3D4FE00DA3F78 /* IconTom-87.png */; settings = {ASSET_TAGS = (); }; };
 		7EF949A51BB052360035556A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF949A41BB052360035556A /* main.m */; };
 		7EF949A81BB052360035556A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF949A71BB052360035556A /* AppDelegate.m */; };
 		7EF949AB1BB052360035556A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF949AA1BB052360035556A /* ViewController.m */; };
@@ -517,6 +527,16 @@
 		7EDB1C051BB1A64100DA3F78 /* slap6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = slap6.wav; sourceTree = "<group>"; };
 		7EDB1C061BB1A64100DA3F78 /* splat_01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = splat_01.wav; sourceTree = "<group>"; };
 		7EDB1C071BB1A64100DA3F78 /* splat_05.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = splat_05.wav; sourceTree = "<group>"; };
+		7EDB205C1BB3D4FE00DA3F78 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		7EDB205D1BB3D4FE00DA3F78 /* iconTom-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconTom-120.png"; sourceTree = "<group>"; };
+		7EDB205E1BB3D4FE00DA3F78 /* iconTom-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconTom-152.png"; sourceTree = "<group>"; };
+		7EDB205F1BB3D4FE00DA3F78 /* iconTom-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconTom-180.png"; sourceTree = "<group>"; };
+		7EDB20601BB3D4FE00DA3F78 /* iconTom-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconTom-29.png"; sourceTree = "<group>"; };
+		7EDB20611BB3D4FE00DA3F78 /* iconTom-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconTom-40.png"; sourceTree = "<group>"; };
+		7EDB20621BB3D4FE00DA3F78 /* iconTom-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconTom-58.png"; sourceTree = "<group>"; };
+		7EDB20631BB3D4FE00DA3F78 /* iconTom-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconTom-76.png"; sourceTree = "<group>"; };
+		7EDB20641BB3D4FE00DA3F78 /* IconTom-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconTom-80.png"; sourceTree = "<group>"; };
+		7EDB20651BB3D4FE00DA3F78 /* IconTom-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconTom-87.png"; sourceTree = "<group>"; };
 		7EF949A01BB052360035556A /* TLTomCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLTomCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF949A41BB052360035556A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EF949A61BB052360035556A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1019,6 +1039,23 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		7EDB205B1BB3D4FE00DA3F78 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				7EDB205C1BB3D4FE00DA3F78 /* Icon.png */,
+				7EDB205D1BB3D4FE00DA3F78 /* iconTom-120.png */,
+				7EDB205E1BB3D4FE00DA3F78 /* iconTom-152.png */,
+				7EDB205F1BB3D4FE00DA3F78 /* iconTom-180.png */,
+				7EDB20601BB3D4FE00DA3F78 /* iconTom-29.png */,
+				7EDB20611BB3D4FE00DA3F78 /* iconTom-40.png */,
+				7EDB20621BB3D4FE00DA3F78 /* iconTom-58.png */,
+				7EDB20631BB3D4FE00DA3F78 /* iconTom-76.png */,
+				7EDB20641BB3D4FE00DA3F78 /* IconTom-80.png */,
+				7EDB20651BB3D4FE00DA3F78 /* IconTom-87.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		7EF949971BB052360035556A = {
 			isa = PBXGroup;
 			children = (
@@ -1054,6 +1091,7 @@
 		7EF949A31BB052360035556A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7EDB205B1BB3D4FE00DA3F78 /* Icons */,
 				7EDB1BEA1BB1A64100DA3F78 /* Sounds */,
 				7EF94D3E1BB052DA0035556A /* Animations */,
 				7EF949A41BB052360035556A /* main.m */,
@@ -1675,6 +1713,7 @@
 				7EF94F151BB052DA0035556A /* angry_16.jpg in Resources */,
 				7EF94FC01BB052DA0035556A /* fart_27.jpg in Resources */,
 				7EF94F321BB052DA0035556A /* drink_06.jpg in Resources */,
+				7EDB206E1BB3D4FE00DA3F78 /* IconTom-80.png in Resources */,
 				7EF94F681BB052DA0035556A /* drink_60.jpg in Resources */,
 				7EF94FEA1BB052DA0035556A /* footRight_11.jpg in Resources */,
 				7EF950AF1BB052DA0035556A /* stomach_17.jpg in Resources */,
@@ -1722,8 +1761,10 @@
 				7EF94F131BB052DA0035556A /* angry_14.jpg in Resources */,
 				7EF94F0C1BB052DA0035556A /* angry_07.jpg in Resources */,
 				7EF94F981BB052DA0035556A /* eat_27.jpg in Resources */,
+				7EDB20691BB3D4FE00DA3F78 /* iconTom-180.png in Resources */,
 				7EF950851BB052DA0035556A /* scratch_31.jpg in Resources */,
 				7EF94F521BB052DA0035556A /* drink_38.jpg in Resources */,
+				7EDB20661BB3D4FE00DA3F78 /* Icon.png in Resources */,
 				7EF94F461BB052DA0035556A /* drink_26.jpg in Resources */,
 				7EF94FF01BB052DA0035556A /* footRight_17.jpg in Resources */,
 				7EF950A61BB052DA0035556A /* stomach_08.jpg in Resources */,
@@ -1813,8 +1854,10 @@
 				7EF950531BB052DA0035556A /* pie_05.jpg in Resources */,
 				7EF94FDF1BB052DA0035556A /* footRight_00.jpg in Resources */,
 				7EF94F531BB052DA0035556A /* drink_39.jpg in Resources */,
+				7EDB20681BB3D4FE00DA3F78 /* iconTom-152.png in Resources */,
 				7EF950111BB052DA0035556A /* knockout_20.jpg in Resources */,
 				7EF9504A1BB052DA0035556A /* knockout_77.jpg in Resources */,
+				7EDB206C1BB3D4FE00DA3F78 /* iconTom-58.png in Resources */,
 				7EF94F1A1BB052DA0035556A /* angry_21.jpg in Resources */,
 				7EF94FC91BB052DA0035556A /* footLeft_08.jpg in Resources */,
 				7EF94FB31BB052DA0035556A /* fart_14.jpg in Resources */,
@@ -1831,6 +1874,7 @@
 				7EF950B91BB052DA0035556A /* stomach_27.jpg in Resources */,
 				7EF94FDB1BB052DA0035556A /* footLeft_26.jpg in Resources */,
 				7EF950641BB052DA0035556A /* pie_22.jpg in Resources */,
+				7EDB206A1BB3D4FE00DA3F78 /* iconTom-29.png in Resources */,
 				7EF94F171BB052DA0035556A /* angry_18.jpg in Resources */,
 				7EF950451BB052DA0035556A /* knockout_72.jpg in Resources */,
 				7EF94F691BB052DA0035556A /* drink_61.jpg in Resources */,
@@ -1879,6 +1923,7 @@
 				7EF94F2A1BB052DA0035556A /* cymbal_11.jpg in Resources */,
 				7EF950521BB052DA0035556A /* pie_04.jpg in Resources */,
 				7EF94FCE1BB052DA0035556A /* footLeft_13.jpg in Resources */,
+				7EDB206B1BB3D4FE00DA3F78 /* iconTom-40.png in Resources */,
 				7EF94F301BB052DA0035556A /* drink_04.jpg in Resources */,
 				7EF94F831BB052DA0035556A /* eat_06.jpg in Resources */,
 				7EF950A21BB052DA0035556A /* stomach_04.jpg in Resources */,
@@ -2049,6 +2094,7 @@
 				7EF950771BB052DA0035556A /* scratch_17.jpg in Resources */,
 				7EF94F751BB052DA0035556A /* drink_73.jpg in Resources */,
 				7EF94FE61BB052DA0035556A /* footRight_07.jpg in Resources */,
+				7EDB20671BB3D4FE00DA3F78 /* iconTom-120.png in Resources */,
 				7EF94F491BB052DA0035556A /* drink_29.jpg in Resources */,
 				7EF950941BB052DA0035556A /* scratch_46.jpg in Resources */,
 				7EF94F591BB052DA0035556A /* drink_45.jpg in Resources */,
@@ -2075,11 +2121,13 @@
 				7EF94F381BB052DA0035556A /* drink_12.jpg in Resources */,
 				7EF94F811BB052DA0035556A /* eat_04.jpg in Resources */,
 				7EF94F091BB052DA0035556A /* angry_04.jpg in Resources */,
+				7EDB206D1BB3D4FE00DA3F78 /* iconTom-76.png in Resources */,
 				7EF94F511BB052DA0035556A /* drink_37.jpg in Resources */,
 				7EF94FDE1BB052DA0035556A /* footLeft_29.jpg in Resources */,
 				7EF950031BB052DA0035556A /* knockout_06.jpg in Resources */,
 				7EF950311BB052DA0035556A /* knockout_52.jpg in Resources */,
 				7EF94F451BB052DA0035556A /* drink_25.jpg in Resources */,
+				7EDB206F1BB3D4FE00DA3F78 /* IconTom-87.png in Resources */,
 				7EF94F8F1BB052DA0035556A /* eat_18.jpg in Resources */,
 				7EF94FB71BB052DA0035556A /* fart_18.jpg in Resources */,
 				7EF950B21BB052DA0035556A /* stomach_20.jpg in Resources */,
@@ -2256,11 +2304,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TLTomCat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/TLTomCat/ThirdFiles",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.niwodai.www.TLTomCat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2271,11 +2317,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TLTomCat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/TLTomCat/ThirdFiles",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.niwodai.www.TLTomCat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

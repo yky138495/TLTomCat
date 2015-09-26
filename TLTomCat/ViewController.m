@@ -98,28 +98,33 @@
 }
 
 - (IBAction)btnDrink {
-    [self playAnimationwithName:@"drink" andImageCount:81 andDuration:0.05];
+    [self playAnimationwithName:@"drink" andImageCount:81 andDuration:0.07];
     
-    [self performSelector:@selector(playSoundWithFile:) withObject:@"pour_milk" afterDelay:2.4];
-    [self performSelector:@selector(playSoundWithFile:) withObject:@"p_drink_milk" afterDelay:5.8];
+    [self performSelector:@selector(playSoundWithFile:) withObject:@"pour_milk" afterDelay:1.3];
+    [self performSelector:@selector(playSoundWithFile:) withObject:@"p_drink_milk" afterDelay:2.7];
 }
 
 - (IBAction)btnEat {
-    [self playAnimationwithName:@"eat" andImageCount:40 andDuration:0.05];
-    [self performSelector:@selector(playSoundWithFile:) withObject:@"p_eat" afterDelay:1.8];
+    [self playAnimationwithName:@"eat" andImageCount:40 andDuration:0.07];
+    [self performSelector:@selector(playSoundWithFile:) withObject:@"p_eat" afterDelay:0.9];
 }
 
 - (IBAction)btnKnockout {
-    [self playAnimationwithName:@"knockout" andImageCount:81 andDuration:0.05];
+    [self playAnimationwithName:@"knockout" andImageCount:81 andDuration:0.09];
+    [self performSelector:@selector(playSoundWithFile:) withObject:@"fall" afterDelay:1.6];
+    [self performSelector:@selector(playSoundWithFile:) withObject:@"p_stars2s" afterDelay:2.2];
 }
 
 - (IBAction)btnFart {
+    int number = [self getRandomNumber:1 to:3];
+    NSString *strFileName = [NSString stringWithFormat:@"fart00%d_11025",number];
     [self playAnimationwithName:@"fart" andImageCount:28 andDuration:0.08];
+    [self performSelector:@selector(playSoundWithFile:) withObject:strFileName afterDelay:0.7];
 }
 
 - (IBAction)btnScratch {
     [self playAnimationwithName:@"scratch" andImageCount:56 andDuration:0.06];
-    [self performSelector:@selector(playSoundWithFile:) withObject:@"scratch_kratzen" afterDelay:3.8];
+    [self performSelector:@selector(playSoundWithFile:) withObject:@"scratch_kratzen" afterDelay:1.3];
 }
 
 - (IBAction)btnPie {
@@ -149,8 +154,7 @@
     
     [self playAnimationwithName:@"angry" andImageCount:26 andDuration:0.1];
     [self playSoundWithFile:file];
-    [self performSelector:@selector(playSoundWithFile:) withObject:@"fall" afterDelay:1.8];
-    [self performSelector:@selector(playSoundWithFile:) withObject:@"p_stars2s" afterDelay:2.3];
+    [self performSelector:@selector(playSoundWithFile:) withObject:@"angry" afterDelay:1.8];
 }
 
 @end

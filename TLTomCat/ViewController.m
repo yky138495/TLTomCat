@@ -88,65 +88,76 @@
 }
 
 
--(int)getRandomNumber:(int)from to:(int)to {
+-(int)getRandomNumber:(int)from to:(int)to
+{
     return (int)(from + arc4random() % (to-from+1));
 }
 
-- (IBAction)btnCymbal {
+- (IBAction)btnCymbal
+{
     [self playAnimationwithName:@"cymbal" andImageCount:13];
     [self performSelector:@selector(playSoundWithFile:) withObject:@"cymbal" afterDelay:0.8];
 }
 
-- (IBAction)btnDrink {
+- (IBAction)btnDrink
+{
     [self playAnimationwithName:@"drink" andImageCount:81];
     
     [self performSelector:@selector(playSoundWithFile:) withObject:@"pour_milk" afterDelay:2.4];
     [self performSelector:@selector(playSoundWithFile:) withObject:@"p_drink_milk" afterDelay:5.8];
 }
 
-- (IBAction)btnEat {
+- (IBAction)btnEat
+{
     [self playAnimationwithName:@"eat" andImageCount:40];
     [self performSelector:@selector(playSoundWithFile:) withObject:@"p_eat" afterDelay:1.8];
 }
 
-- (IBAction)btnKnockout {
+- (IBAction)btnKnockout
+{
     [self playAnimationwithName:@"knockout" andImageCount:81];
 }
 
-- (IBAction)btnFart {
+- (IBAction)btnFart
+{
     [self playAnimationwithName:@"fart" andImageCount:28];
 }
 
-- (IBAction)btnScratch {
+- (IBAction)btnScratch
+{
     [self playAnimationwithName:@"scratch" andImageCount:56];
     [self performSelector:@selector(playSoundWithFile:) withObject:@"scratch_kratzen" afterDelay:3.8];
 }
 
-- (IBAction)btnPie {
+- (IBAction)btnPie
+{
     [self playAnimationwithName:@"pie" andImageCount:24];
 }
 
-- (IBAction)btnFootLeft {
+- (IBAction)btnFootLeft
+{
     int number = [self getRandomNumber:1 to:2];
     [self playAnimationwithName:@"footLeft" andImageCount:30];
     [self playSoundWithFile:number == 1 ? @"p_foot3" : @"p_foot4"];
 }
 
-- (IBAction)btnFootRight {
+- (IBAction)btnFootRight
+{
     int number = [self getRandomNumber:1 to:2];
     [self playAnimationwithName:@"footRight" andImageCount:30];
     [self playSoundWithFile:number == 1 ? @"p_foot3" : @"p_foot4"];
 }
 
-- (IBAction)btnStomach {
+- (IBAction)btnStomach
+{
     int number = [self getRandomNumber:1 to:2];
     [self playAnimationwithName:@"stomach" andImageCount:34];
     [self playSoundWithFile:number == 1 ? @"p_belly1" : @"p_belly2"];
 }
 
-- (IBAction)btnAngryTail {
+- (IBAction)btnAngryTail
+{
     NSString *file = [NSString stringWithFormat:@"slap%d",[self getRandomNumber:1 to:6]];
-    
     [self playAnimationwithName:@"angry" andImageCount:26];
     [self playSoundWithFile:file];
     [self performSelector:@selector(playSoundWithFile:) withObject:@"fall" afterDelay:1.8];
